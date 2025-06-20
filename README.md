@@ -16,5 +16,5 @@ dependencies:
 ```
 
 ## Libraries included
-- Kotlin StdLib 2.1.0
-- Kotlin Reflect 2.1.0
+- Kotlin StdLib 2.1.21
+- Kotlin Reflect 2.1.21
