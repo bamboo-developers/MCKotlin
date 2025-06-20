@@ -1,3 +1,5 @@
+import net.minecrell.pluginyml.bukkit.BukkitPluginDescription
+
 plugins {
     kotlin("jvm")
     id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
@@ -15,8 +17,8 @@ repositories {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_16
-    targetCompatibility = JavaVersion.VERSION_16
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 val spigotVersion = properties["spigot_version"]
@@ -37,6 +39,8 @@ bukkit {
     authors = listOf("subkek")
     website = "https://discord.gg/eRvwvmEXWz"
     apiVersion = "1.16"
+
+    load = BukkitPluginDescription.PluginLoadOrder.STARTUP
 
     foliaSupported = true
 }
